@@ -1,0 +1,104 @@
+
+<!doctype html>
+<html>
+
+<head>
+    <title>Menu</title>
+</head>
+    <header>
+    
+    </header>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<style>
+    header {
+        height: 200px;
+        background: url'web.jpg' no-repeat center center;
+        background-size: cover;
+    }
+
+    nav {
+        width: auto;
+        background: linear-gradient(to right, #13be0d, #0fa25b);
+        padding: 10px 0;
+    }
+
+    nav ol {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav ol li {
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        transition: transform 0.3s, background-color 0.3s;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    nav ol li:hover {
+        transform: scale(1.1);
+        background: #2c7aef;
+    }
+
+    nav ol li a {
+        color: #2575fc;
+        font-size: 20px;
+        font-family: Arial, sans-serif;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    nav ol li a:hover {
+        color: white;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    @media only screen and (max-width: 768px) {
+        #menu {
+            display: block;
+            font-size: 40px;
+            color: white;
+            margin: 10px 20px;
+        }
+
+        nav ol {
+            flex-direction: column;
+            gap: 10px;
+            display: none;
+        }
+
+        nav:hover ol {
+            display: flex;
+        }
+
+        nav ol li {
+            width: 80%;
+            margin: auto;
+        }
+    }
+</style>
+
+<body>
+    <nav>
+        <span id="menu">&#9776;</span>
+        <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="practice.html">Practice</a></li>
+            <li><a href="https://www.behance.net/kssooraj1">Behance</a></li>
+            <li><a href="https://www.behance.net/gallery/221714177/Premia-luxury-pens-and-watches-case-study">Case study</a></li>
+            <li><a href="#">Project</a></li>
+        </ol>
+    </nav>
+<img src="logo.png" style="display: block; margin: 20px auto;">
+
+</body>
+
+</html>
